@@ -1,0 +1,232 @@
+:root {
+  /* font family */
+  --ff-sans: "Open Sans", sans-serif;
+  --ff-serif: "Raleway", sans-serif;
+
+  /* font family */
+  --fs-400: 0.875rem; /* 14px */
+  --fs-700: 1.125rem; /* 18px */
+  --fs-800: 1.8rem; /* 28.8px */
+
+  /* font weight */
+  --fw-400: 400;
+  --fw-600: 600;
+  --fw-700: 700;
+
+  /* Color */
+
+  --clr-neutral-100: #fff;
+
+  --clr-primary-100: #000;
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+dl,
+dd,
+figure,
+blockquote {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  line-height: 1.5;
+  font-family: var(--ff-sans);
+  font-size: var(--fs-700);
+  color: var(--clr-primary-100);
+}
+
+/* Typography */
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: var(--fs-800);
+}
+
+/* Utility Class */
+
+.container {
+  max-width: 1616px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Components */
+
+.btn {
+  display: inline-block;
+  background-color: var(--bg-btn, var(--clr-primary-100));
+  color: var(--clr-neutral-100);
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.btn-accent {
+  --bg-btn: none;
+}
+
+/* General Lay-out */
+.planners {
+  padding: 2rem;
+  background-image: linear-gradient(
+      -90deg,
+      rgba(239, 236, 229, 0) 0%,
+      rgba(239, 236, 229, 0.565) 100%
+    ),
+    url("https://images.prismic.io/mishmash/3ebb09b5-0314-4295-b0a4-49814e484e2c_homepage-shop-V02-1.png?auto=compress,format");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right, top left -300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 565px;
+}
+
+.notebook {
+  padding: 2rem;
+  background-color: #c2d1df;
+  background-image: url("https://images.prismic.io/mishmash/267e3f1d-adc1-4e08-af18-df801c2ba34d_mishmash-the-notebook-blue-12.png?auto=compress,format");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 565px;
+}
+
+.log {
+  padding: 2rem;
+  background-color: #c4e7ce;
+  background-image: url("https://images.prismic.io/mishmash/8f8e9367-0ff9-4bbd-9f10-6ce5bdaa1e8b_homepage-mishmash-bestseller-v2-6.png?auto=compress,format");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 565px;
+}
+
+.stock {
+  padding: 2rem;
+  background-color: #ebecec;
+  background-image: url("https://images.prismic.io/mishmash/57e954db-f946-464b-a4b9-b6821a24698f_homepage-mishmash-last-in-stock-v2-01-6.png?auto=compress,format");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 565px;
+}
+
+/* Branch */
+
+.branch__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.branch__list img {
+  width: 130px;
+  max-width: 175px;
+}
+
+/* Products */
+
+.products__arrival {
+  background-color: #efece5;
+}
+
+.products__arrival img {
+  width: 800px;
+}
+.products__arrival-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.products__promotion {
+  background-color: #d6cce3;
+}
+
+.products__highlight {
+  background-color: #f85d56;
+}
+
+/* Testimonials */
+
+.testimonials {
+  max-width: 1380px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Shipping */
+.shipping {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.shipping__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Call to action */
+
+.cta {
+  border: solid;
+}
