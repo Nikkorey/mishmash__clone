@@ -11,9 +11,9 @@
 <body>
     <div class="container">
         <!-- Start of Navigation -->
-        <nav class="nav">
-            <ul>
-                <li></li>
+        <nav class="nav split">
+            <ul class="split">
+                <li><a href="#"><img src="https://prismic-io.s3.amazonaws.com/mishmash/d63115dd-f1f8-4e66-b8f4-69feaab26e4a_mishmash+logo.svg" alt=""></a></li>
                 <li><a href="#">Shop</a></li>
             </ul>
             <ul>
@@ -24,10 +24,10 @@
         <!-- End of Navigation -->
 
         <!-- Start of Main -->
-        <main>
+        <main class="main">
             <section class="planners">
                 <article>
-                    <h2>30% Off Planners</h2>
+                    <h2 class="text-800">30% Off Planners</h2>
                     <p>Enjoy a limited time offer of 30% off on the entire planners collection</p>
                 </article>
                 <div>
@@ -38,7 +38,7 @@
 
             <section class="notebook">
                 <article>
-                    <h2>Highlight<span>The Notebook</span></h2>
+                    <h2 class="text-800">Highlight<span>The Notebook</span></h2>
                     <p>Shop your tabbed notebook choosing from more than five colourways.</p>
                 </article>
                 <div>
@@ -49,7 +49,7 @@
 
             <article class="log">
                 <header>
-                    <h2>Bestseller<span>Log Refill</span></h2>
+                    <h2 class="text-800">Bestseller<span>Log Refill</span></h2>
                     <p>The Log Refill works as single piece or as a refill for your personalised log.</p>
                 </header>
                 <div>
@@ -60,7 +60,7 @@
 
             <article class="stock">
                 <header>
-                    <h2>Last in Stock<span>Items at discounted prices</span></h2>
+                    <h2 class="text-800">Last in Stock<span>Items at discounted prices</span></h2>
                     <p>More than 10 references are currently enjoying an unheard of promotion.</p>
                 </header>
                 <div class="features__info">
@@ -88,7 +88,7 @@
             <article class="products__arrival">
                 <div>
                     <p>New Arrival</p>
-                    <h2>Naked collection</h2>
+                    <h2 class="text-800">Naked collection</h2>
                     <p>Just-in the brand new collection of your favourite minimal notebook. Now available in more than 16 references between new colours and grids.</p>
                     <div class="products__link">
                         <a href="#" class="btn">Add to cart</a>
@@ -111,10 +111,10 @@
                     </div>
                 </div>
             </article>
-            <article class="products__promotion">
+            <article class="products__promotion text-accent">
                 <div>
                     <p>Promotion</p>
-                    <h2>30% off</h2>
+                    <h2 class="text-800">30% off</h2>
                     <p>Just in time to kickstart the new year, mishmash Planners are now with 30% off.</p>
                     <div class="products__link">
                         <a href="#" class="btn">Add to cart</a>
@@ -129,10 +129,10 @@
                     </div>
                 </div>
             </article>
-            <article class="products__highlight">
+            <article class="products__highlight text-accent">
                 <div>
                     <p>Highlight</p>
-                    <h2>Holy Silver</h2>
+                    <h2 class="text-800">Holy Silver</h2>
                     <p>Heaven-ready, with divine edges. The exquisite, silver-like foil edges make the Holy Silver a class of its own.</p>
                     <div class="products__link">
                         <a href="#" class="btn">Add to cart</a>
@@ -166,7 +166,7 @@
             </article>
             <article class="testimonial">
                 <p>Just wanted to drop by and thank you for one of the best ever owned notebooks I have ever had in my life! The sky grey log is gorgeous and it really helps me with my writings and my university courses with notes.</p>
-        
+                <p>Ayesha Al Mulla, Customer</p>
             </article>
             <article class="testimonial">
                 <p>Thank you so much for making your beautiful stitched and sewn notebooks which have enlivened my thoughts and writing. Making me feel like my little lyrical scribbles are complete books in their own right.</p>
@@ -174,42 +174,45 @@
             </article>
         </section>
         <!-- end of Testimony Section-->
+
         <!-- Start of quality section -->
         <section class="quality">
-            <header>
-                <h2>Premium quality, from paper to layouts</h2>
+            <header class="text-center">
+                <h2 class="text-800">Premium quality, from paper to layouts</h2>
                 <p>Expand your knowledge by exploring all the specification pages we have created for you.</p>
             </header>
-            <div class="quality__card">
-                <img src="https://images.prismic.io/mishmash/ad1d2830-269f-4475-ae0f-4cae3044afdc_mm-paper-catalog-top-view_001.jpg?auto=compress,format" alt="">
-                <div class="description">
-                    <h3>Our premium paper</h3>
-                    <p>We proud ourselves of our paper selection. From the white pages to a selection of fine-papers.</p>
-                    <a href="#">See our papers</a>
-                </div>
-            </div>
-            <div class="quality__card">
-                <img src="https://images.prismic.io/mishmash/9a216c73-2e4a-4ae0-873f-ac13286a41ac_Testing-pens-web.jpg?auto=compress,format" alt="">
-                <div class="description">
-                    <h3>Perfect for all pens</h3>
-                    <p>Whether you have one of those trendy fountain-pens or just a plain simple Uni-ball, we got you covered.</p>
-                    <a href="#">See pen tests</a>
-                </div>
-            </div>
-            <div class="quality__card">
-                <img src="https://images.prismic.io/mishmash/0aebd8db-cec7-4171-b10c-c5be8b0fbcdc_layouts-image.jpg?auto=compress,format" alt="">
-                <div class="description">
-                    <h3>Layouts for all tastes</h3>
-                    <p>Choosing a notebook grid can be hard. To help you out we separated them for a massive deep dive.</p>
-                    <a href="#">See layouts</a>
-                </div>
+            <div class="quality__container">
+                <article class="quality__paper">
+                    <img src="https://images.prismic.io/mishmash/ad1d2830-269f-4475-ae0f-4cae3044afdc_mm-paper-catalog-top-view_001.jpg?auto=compress,format" alt="">
+                    <div class="quality__paper-desc text-center">
+                        <h3 class="text-700">Our premium paper</h3>
+                        <p>We proud ourselves of our paper selection. From the white pages to a selection of fine-papers.</p>
+                        <a href="#">See our papers</a>
+                    </div>
+                </article>
+                <article class="quality__card">
+                    <img src="https://images.prismic.io/mishmash/9a216c73-2e4a-4ae0-873f-ac13286a41ac_Testing-pens-web.jpg?auto=compress,format" alt="">
+                    <div class="quality__paper-desc text-center ">
+                        <h3 class="text-700">Perfect for all pens</h3>
+                        <p>Whether you have one of those trendy fountain-pens or just a plain simple Uni-ball, we got you covered.</p>
+                        <a href="#">See pen tests</a>
+                    </div>
+                </article>
+                <article class="quality__card">
+                    <img src="https://images.prismic.io/mishmash/0aebd8db-cec7-4171-b10c-c5be8b0fbcdc_layouts-image.jpg?auto=compress,format" alt="">
+                    <div class="quality__paper-desc text-center">
+                        <h3 class="text-700">Layouts for all tastes</h3>
+                        <p>Choosing a notebook grid can be hard. To help you out we separated them for a massive deep dive.</p>
+                        <a href="#">See layouts</a>
+                    </div>
+                </article>
             </div>
         </section>
         <!-- End of quality Section -->
 
         <!-- Start of  Shipping Section-->
         <section class="shipping">
-            <ul class="shipping__list">
+            <ul class="shipping__list split">
                 <li class="shipping__list-items">
                     <img src="https://prismic-io.s3.amazonaws.com/mishmash/4ac3cc5c-52a0-4c88-bc2d-fd57207e93ef_TruckFast.svg" alt="">
                     <h4>Ships free and with love</h4>
@@ -230,45 +233,63 @@
         <!-- End of Shipping Section -->
 
         <!-- Start of Call to action -->
-        <section class="cta">
+        <section class="cta split">
             <header>
-                <h2>Get 20% off your first order</h2>
+                <h3 class="text-700">Get 20% off your first order</h3>
                 <p>Receive 20% off your first order simply by creating an account. It is that simple.</p>
                 <a href="#" class="btn">Create account</a>
             </header>
-            <img src="" alt="">
+            <img src="https://images.prismic.io/mishmash/4cacb78d-7dfc-429d-9147-2258366be134_test2.jpg?auto=compress,format" alt="">
         </section>
         <!-- End of Call to Action -->
 
         <!-- Start of Footer -->
         <footer class="footer">
-            <img src="" alt="">
-            <div class="footer__list">
-                <dl>
-                    <dt>Product</dt>
-                    <dd><a href="">Shop</a></dd>
-                    <dd><a href="">Custom Notebooks</a></dd>
-                    <dd><a href="">Premium Paper</a></dd>
-                    <dd><a href="">Testing Pens</a></dd>
-                    <dd><a href="">Paper Layouts</a></dd>
-                </dl>
-                <dl>
-                    <dt>Brand</dt>
-                    <dd><a href="#">About us</a></dd>
-                    <dd><a href="#">Blog</a></dd>
-                    <dd><a href="#">Brand Assets</a></dd>
-                    <dd><a href="#">Newsletter</a></dd>
-                    <dd><a href="#">Points of Sale</a></dd>
-                    <dd><a href="#">Sustainable Practices</a></dd>
-                </dl>
-                <dl>
-                    <dt>Support</dt>
-                    <dd><a href="#">Customer Support</a></dd>
-                    <dd><a href="#">Returns & Exchanges</a></dd>
-                    <dd><a href="#">Product Support</a></dd>
-                    <dd><a href="#">Order & Shipping</a></dd>
-                    <dd><a href="#">Contacts</a></dd>
-                </dl>
+            <div class="footer__container">
+                <img src="https://prismic-io.s3.amazonaws.com/mishmash/d63115dd-f1f8-4e66-b8f4-69feaab26e4a_mishmash+logo.svg" alt="">
+                <div class="footer__list">
+                    <dl class="footer__list-product">
+                        <dt>Product</dt>
+                        <dd><a href="#">Shop</a></dd>
+                        <dd><a href="#">Custom Notebooks</a></dd>
+                        <dd><a href="#">Premium Paper</a></dd>
+                        <dd><a href="#">Testing Pens</a></dd>
+                        <dd><a href="#">Paper Layouts</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>Brand</dt>
+                        <dd><a href="#">About us</a></dd>
+                        <dd><a href="#">Blog</a></dd>
+                        <dd><a href="#">Brand Assets</a></dd>
+                        <dd><a href="#">Newsletter</a></dd>
+                        <dd><a href="#">Points of Sale</a></dd>
+                        <dd><a href="#">Sustainable Practices</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>Support</dt>
+                        <dd><a href="#">Customer Support</a></dd>
+                        <dd><a href="#">Returns & Exchanges</a></dd>
+                        <dd><a href="#">Product Support</a></dd>
+                        <dd><a href="#">Order & Shipping</a></dd>
+                        <dd><a href="#">Contacts</a></dd>
+                    </dl>
+                </div>
+            </div>
+
+            <div class="footer__note split">
+                <p>Legal terms and information:
+                <p><a href="#">Privacy Policy </a></p>
+                <p>·</p>
+                <p><a href="#">Terms and Conditions</a></p>
+            </div>
+
+            <div class="footer__info split">
+                <p>© mishmash 2021</p>
+                <ul class="footer__info-social split">
+                    <li><a href="#"><img src="https://prismic-io.s3.amazonaws.com/mishmash/9026de85-0f0c-484e-81c9-7853a928b75d_Facebook.svg" alt=""></a></li>
+                    <li><a href="#"><img src="https://prismic-io.s3.amazonaws.com/mishmash/b25034ec-8e9b-41b3-a950-c66caa7b70d6_Instagram.svg" alt=""></a></li>
+                    <li><a href="#"><img src="https://prismic-io.s3.amazonaws.com/mishmash/efd0a28c-eb4b-4565-b4a8-1e4941320a81_Twitter.svg" alt=""></a></li>
+                </ul>
             </div>
         </footer>
         <!-- End of Footer -->
