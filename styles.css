@@ -270,6 +270,12 @@ a:hover {
   background-position: bottom right, top left -300px;
 }
 
+@media (min-width: 1024px) {
+  .header__planner {
+    background-position: bottom right, top right -150px;
+  }
+}
+
 .header__notebook {
   background-color: var(--clr-lightBlue);
   background-image: url("https://images.prismic.io/mishmash/267e3f1d-adc1-4e08-af18-df801c2ba34d_mishmash-the-notebook-blue-12.png?auto=compress,format");
